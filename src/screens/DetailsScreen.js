@@ -18,7 +18,7 @@ export default class DetailsScreen extends Component {
         const item = navigation.getParam('item', {})
         return (
             <Card>
-                <Image style = {{height: 200, flex: 1, borderRadius: 5}} resizeMode="cover" source = {{uri: item.image_url}}/>
+                <Image style = {{height: 200, width: '100%', borderRadius: 5}} resizeMode="cover" source = {{uri: item.image_url}}/>
                 <View style={styles.recipedesc}>
                     <Text style={{fontWeight: '500', marginTop: 10, fontSize: 14, color: '#4F4E4E'}}>
                         Recipe Name -
